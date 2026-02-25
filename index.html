@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>Admin Panel</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <button class="menu-toggle">☰</button>
+                <h1>Dashboard</h1>
+            </div>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="notifications">
+                    <span class="notification-icon">🔔</span>
+                    <span class="notification-badge">3</span>
+                </div>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                    <span class="user-name">Admin User</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Stats Cards -->
+            <section class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3>Total Users</h3>
+                        <p class="stat-number">1,234</p>
+                        <span class="stat-change positive">+12% from last month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📦</div>
+                    <div class="stat-info">
+                        <h3>Total Products</h3>
+                        <p class="stat-number">567</p>
+                        <span class="stat-change positive">+8% from last month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🛒</div>
+                    <div class="stat-info">
+                        <h3>Total Orders</h3>
+                        <p class="stat-number">890</p>
+                        <span class="stat-change negative">-3% from last month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-info">
+                        <h3>Revenue</h3>
+                        <p class="stat-number">$45,678</p>
+                        <span class="stat-change positive">+15% from last month</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Orders Table -->
+            <section class="table-section">
+                <div class="section-header">
+                    <h2>Recent Orders</h2>
+                    <button class="btn-primary">View All</button>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Product</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#ORD-001</td>
+                            <td>John Doe</td>
+                            <td>Laptop</td>
+                            <td>$999.99</td>
+                            <td><span class="status-badge delivered">Delivered</span></td>
+                            <td>2026-02-25</td>
+                            <td><button class="btn-action">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-002</td>
+                            <td>Jane Smith</td>
+                            <td>Smartphone</td>
+                            <td>$699.99</td>
+                            <td><span class="status-badge pending">Pending</span></td>
+                            <td>2026-02-25</td>
+                            <td><button class="btn-action">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-003</td>
+                            <td>Bob Johnson</td>
+                            <td>Tablet</td>
+                            <td>$449.99</td>
+                            <td><span class="status-badge processing">Processing</span></td>
+                            <td>2026-02-24</td>
+                            <td><button class="btn-action">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-004</td>
+                            <td>Alice Williams</td>
+                            <td>Headphones</td>
+                            <td>$199.99</td>
+                            <td><span class="status-badge delivered">Delivered</span></td>
+                            <td>2026-02-24</td>
+                            <td><button class="btn-action">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-005</td>
+                            <td>Charlie Brown</td>
+                            <td>Monitor</td>
+                            <td>$349.99</td>
+                            <td><span class="status-badge cancelled">Cancelled</span></td>
+                            <td>2026-02-23</td>
+                            <td><button class="btn-action">View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="activity-section">
+                <div class="section-header">
+                    <h2>Recent Activity</h2>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">✅</div>
+                        <div class="activity-content">
+                            <p><strong>Order #ORD-001</strong> was delivered to John Doe</p>
+                            <span class="activity-time">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">📝</div>
+                        <div class="activity-content">
+                            <p><strong>New user</strong> Jane Smith registered</p>
+                            <span class="activity-time">4 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">📦</div>
+                        <div class="activity-content">
+                            <p><strong>Product</strong> "Wireless Mouse" was added to inventory</p>
+                            <span class="activity-time">6 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">⚠️</div>
+                        <div class="activity-content">
+                            <p><strong>Order #ORD-005</strong> was cancelled by Charlie Brown</p>
+                            <span class="activity-time">8 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">💳</div>
+                        <div class="activity-content">
+                            <p><strong>Payment</strong> of $999.99 received from John Doe</p>
+                            <span class="activity-time">10 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
